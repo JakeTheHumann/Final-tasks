@@ -376,7 +376,7 @@ html {
 
 body {
     width: 100%;
-    font-size: 1em;
+    font-size: 100%;
     line-height: 1.4em;
     font-weight: 300;
     padding: 0;
@@ -501,10 +501,9 @@ mark {
    Th/Td Elements include right side white border
 */
 table {
-    width: 90%;
+    width: 75%;
     margin: 1em auto 1em auto;
-    border-collapse: collapse;
-    
+    border-collapse: collapse;   
 }
 
 thead {
@@ -535,6 +534,16 @@ thead th {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 7px;
+}
+
+.table-full {
+    width: 98%;
+}
+.table-md {
+    width: 50%;
+}
+.table-sm {
+    width: 35%;
 }
 
 td {
@@ -961,8 +970,7 @@ Can be applied to types="Submit/Button/Reset" and <Button> element
 .popupInput {
     margin-top: 1em;
     margin-left: 0;
-    max-width: 96%;
-    
+    max-width: 96%;  
 }
 
 /* MEDIA QUERIES - min width: 480px/768px/960px/1200px */
@@ -1112,9 +1120,6 @@ Best used when Radio/Checkbox form areas placed within
 
 @media only screen and (min-width: 960px)  {
 /* Content Containers */
-html {
-    font-size: 1.1em;
-}
 
 header {
     max-width: 960px;
@@ -1194,7 +1199,7 @@ Best used when Radio/Checkbox form areas placed within
 @media only screen and (min-width: 1200px)  {
 /* Content Containers */
 html {
-    font-size: 1.15em;
+    font-size: 1.1em;
 }
 
 footer {
@@ -1275,7 +1280,7 @@ address {
 aside{
     background-color: #f9f9f9;
 }
-blockquote {
+.blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 2em;
@@ -1283,6 +1288,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
+  font-family: serif;
   color: #ccc;
   content: open-quote;
   font-size: 4em;
@@ -1290,7 +1296,7 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-.blockquote {
+blockquote {
     padding: 20px;
     color: #333;
     font-size: 1.15em;
@@ -1352,10 +1358,6 @@ ol ol ol {
 }
 ol ol ol ol {
     list-style: lower-latin;
-}
-p {
-    padding: 10px 0px;
-    line-height: 1.35em;
 }
 .responsiveImg {
     max-width: 100%;
@@ -1527,6 +1529,12 @@ li.dropdown {
         text-align: center;
     }
 }
+/* Text Resize from Nimah
+------------------------------------------------- */
+input[type="button"].sizeText {
+    width: 2em;
+    display: inline-block;
+}
 
 /* Accordion from Nimah
 ------------------------------------------------- */
@@ -1568,13 +1576,10 @@ li.dropdown {
 #sliderLinks li{
     position: relative;
     display: table-cell;
-    top: 450px;
-    left:20%;
-    padding: 20px;
+    top: 50px;
+    left:0%;
+    padding: 10px;
 }
-
-
-
 
 /* Mobile Landscape */
 @media (min-width: 480px) {}
