@@ -15,13 +15,13 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,600' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/dapper.css">
+  <!-- <link rel="stylesheet" href="css/custom.css"> -->
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -148,8 +148,10 @@
     <!-- Grid -->
     <div class="docs-section" id="grid">
       <h6 class="docs-header">The grid</h6>
-      <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+      <p>The Dapper grid system is a 12-column fluid grid with a default max width of 1200px. The max width and width of the gutters between the columns can be changed with just a few simple changes in the CSS and the grid will still work appropriately. The syntax is intuitive and easy to remember to make coding responsively hassle free and time efficient. Below is an example of what you can quickly create using the Dapper grid system classes. If you resize the browser, you can see how it works.</p>
       <div class="example-grid docs-example">
+       
+      <div class="container">
         <div class="row">
           <div class="one column">One</div>
           <div class="eleven columns">Eleven</div>
@@ -164,21 +166,20 @@
         </div>
         <div class="row">
           <div class="four columns">Four</div>
-          <div class="eight columns">Eight</div>
+          <div class="shift-rt-2cols five columns">Five columns shifted right by two columns</div>
         </div>
         <div class="row">
           <div class="five columns">Five</div>
           <div class="seven columns">Seven</div>
         </div>
         <div class="row">
-          <div class="six columns">Six</div>
-          <div class="six columns">Six</div>
+          <div class="centered-six columns">Six columns that are centered</div>
         </div>
         <div class="row">
           <div class="seven columns">Seven
               <div class="row">
-                      <div class="six columns">Nested divs work in this version of Skeleton without any spacing problems.</div>
-                      <div class="six columns">Nested divs work because the padding is in pixels instead of percentages.</div>
+                      <div class="six columns">Nested divs work in this updated version of Skeleton without any spacing problems between the columns.</div>
+                      <div class="six columns">Nested divs work because the padding used to create the gutters is in pixels instead of percentages.</div>
               </div>
            </div>
         <div class="five columns">Five</div>
@@ -198,8 +199,7 @@
         <div class="row">
           <div class="eleven columns">Eleven</div>
           <div class="one column">One</div>
-        </div>
-        
+        </div>  
       </div>
 
 

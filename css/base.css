@@ -1,0 +1,1021 @@
+ /* ELEMENTS RESETS 480:615; 768px:1170; 960px:1720; 1200px:2272;*/
+    /* Content Containers */
+html {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.25em;
+}
+body {
+    width: 100%;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    color: #111111;
+}
+article,
+aside,
+section {
+    /* margin-top: 1em; */
+    display: block;
+    padding: .25em;
+}
+
+header {
+    padding-top: .5em;
+    width: 100%;
+    background-color: #D6D6D6;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0 0 1.25em 0;
+}
+
+footer {
+    width: 100%;
+    min-height: 5em;
+    margin-top: 1em;
+    bottom: 1;
+    position: absolute;
+    text-align: center;
+    background-color: #D6D6D6;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1.25em 0 0 0;
+}
+
+/* Typographical Elements */
+
+h1 {
+    font-size: 325%;
+}
+h2 {
+    font-size: 200%;
+}
+h3 {
+    font-size: 125%;
+}
+h4 {
+    font-size: 90%;
+}
+h5 {
+    font-size: 65%;
+}
+h6 {
+    font-size: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 2px;
+    margin-top: .5em;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: .5em;
+    padding: .1em 0 .1em 0;
+    font-size: .75em;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: .75px;
+}
+
+a {
+    color: #307FF2;
+    text-decoration: none;
+}
+a:hover {
+    color: #3DA6F4;
+    text-decoration: underline;
+}
+a:active {
+    font-weight: 500;
+}
+
+/* Soft yellow outlined rounded highlight  */
+mark {
+    padding: 0em .1em 0em .1em;
+    margin: 0 -.04em 0 -.04em;
+    border-radius: 4px 4px 4px 0px;
+    background-color: #FFFC83;
+    border: solid yellow 2px;
+}
+
+/* USER TEXT SELECT - Red background/white text/burgundy text drop-shadow */
+
+/* IE9  - Also picked up by most modern browsers */
+::selection {
+  background: red;
+  color: white;
+  text-shadow: -7px 5px 7px #720000;
+  font-style: italic;
+}
+/* Safari & Chrome - Webkit Rendering */
+::-webkit-selection {
+  background: red;
+  color: white;
+  text-shadow: -7px 5px 7px #720000;
+}
+/* Mozilla based - Gecko Rendering */ 
+::-moz-selection {
+  background: red;
+  color: white;
+  text-shadow: -7px 5px 7px #720000;
+}
+
+
+/* Tables: Rows/Headers/Data - 
+   Th/Td Elements include right side white border
+ */
+table {
+    width: 90%;
+    margin: 1em auto 1em auto;
+    border-collapse: collapse;
+    
+}
+
+thead {
+    background-color: #939393;
+    color: gray;
+    text-align: center;
+    font-weight: 400;
+    color: #E1E1E1;
+}
+
+
+th {
+    font-size: .75em;
+    height: .5em;
+    padding: .5em 0 .4em .5em;
+    background-color: #D6D6D6;
+    color: white;  
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+thead th {
+    height: .75em;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: white;
+    background-color: #A5A5A5;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+td {
+    height: 2em;
+    font-size: .9em;
+    padding: .5em 0 .4em .5em;
+    letter-spacing: -.75px;
+    background-color: #EAEAEA;
+    color: gray;
+    font-weight: 500;
+}
+
+/* FORM DEFAULTS */
+form {
+    max-width: 100%;
+    color: gray;
+    margin: 1.5em auto 0 auto;
+    display: block;
+}
+
+fieldset {
+    max-width: 50%;
+    border: 2px solid gray;
+    padding: 1em;
+}
+
+legend {
+    padding: .55em;
+    background-color: gray;
+    color: white;
+    margin: 1em 0 2em 0;
+    border-radius: 1em 1em 1em 1em;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+label {
+    font-size: 1em;
+    padding: .6em 1em;
+    background-color: lightgray;
+    border-radius: .5em .5em 0 0;
+    font-weight: 400;
+}
+
+textarea {
+    margin-top: .5em;
+    padding: .65em;
+    display: block;
+    width: 90%;
+	min-height: 2em;
+    color: gray;
+    font-size: 1em;
+    font-weight: 400;
+    border: 2px solid lightgray;
+}
+textarea:active {
+    border: 2px solid gray;
+}
+
+/* Select Form Dropdown*/
+select {
+    min-width: 16em;
+    height: 3em;
+    margin-top: .5em;
+    padding-left: .75em;
+    padding-right: .75em;
+    border-radius: 0 1.45em 1.45em .5em;
+    font-size: 1em;
+    border: solid lightgray 1px;
+    color: lightgray;
+    background: url(../images/dropdown-arrow-light.png);
+    background-size: 36px 36px;
+    background-position: 214px 5px; 
+    background-repeat: no-repeat;
+    background-color: darkgray;   
+}
+select:hover {
+    background-color: gray;   
+}
+
+input {
+    margin-top: .45em;
+    padding: .65em;
+    min-height: 1em;
+    display: block;
+    width: 93%;
+    border: 2px solid lightgray;
+    font-size: 1em;
+}
+/* Input clicked */
+input:active {
+    border: 2px solid gray;
+}
+input[type="text"] { 
+    color: gray;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+input[type="password"] { 
+    color: #AD3A3A;
+    width: 15.75em;
+    margin: .5em 0 1.25em 0;
+    padding-left: .25em;
+    padding-right: .3em;
+    font-size: 1em;
+}
+input[type="number"] { 
+    color: gray;
+    width: 15.75em;
+    margin: .5em 0 1.25em 0;
+    padding-left: .25em;
+    padding-right: .3em;
+    font-size: 1em;
+    font-style: italic;
+    letter-spacing: 10px;
+}
+input[type="radio"] { 
+    width: 15%;
+    padding: .5em;
+    height: auto;
+    color: gray;
+    margin: .75em 0 -.75em .5em;
+    font-size: 2em;  
+}
+input[type="radio"]::selection { 
+    width: 15%;
+    padding: .5em;
+    height: auto;
+    color: gray;
+    margin: .75em 0 -.75em .5em;
+    font-size: 2em;
+}
+input[type="radio"]:not(checked) { 
+    width: 15%;
+    padding: .5em;
+    height: auto;
+    color: gray;
+    margin:.75em 0 -.75em .5em;
+    font-size: 2em;  
+}
+input[type="checkbox"] { 
+    width: 15%;
+    padding: .5em;
+    height: auto;
+    color: gray;
+    margin: .75em 0 -.75em .5em;
+    font-size: 2em; 
+}
+input[type="checkbox"]:checked { 
+    width: 15%;
+    padding: .5em;
+    height: auto;
+    color: gray;
+    margin: .75em 0 -.75em .5em;
+    font-size: 2em;
+}
+input[type="checkbox"]:not(checked) { 
+    width: 15%;
+    padding: .5em;
+    height: auto;
+    color: gray;
+    margin: .75em 0 -.75em .5em;
+    font-size: 2em;  
+}
+
+/* Input "button-like elements*/
+input[type="submit"] { 
+    width: 8em;
+    padding: .25em;
+    height: auto;
+    color: white;
+    margin: .5em 0 .5em 0;
+    font-size: 1.5em;
+    background-color: gray;
+    border-radius: .4em .4em .4em .4em;
+    border: 4px #C6C6C6;
+    border-style:inset;
+}
+input[type="submit"]:active { 
+    color: darkgray;
+    border-style:solid;
+}
+input[type="submit"]:hover { 
+    border-style:solid;
+}
+input[type="button"] { 
+    width: 8em;
+    padding: .25em;
+    height: auto;
+    color: white;
+    margin: .5em 0 .5em 0;
+    font-size: 1.5em;
+    background-color: #307FF2;
+    border-radius: .4em .4em .4em .4em;
+    border: 4px #61BEF7;
+    border-style:inset;
+}
+input[type="button"]:active { 
+    color: #61BEF7;
+    border-style:solid;
+}
+input[type="button"]:hover { 
+    border-style:solid;
+}
+input[type="reset"] { 
+    width: 8em;
+    padding: .25em;
+    height: auto;
+    color: white;
+    margin: .5em 0 .5em 0;
+    font-size: 1.5em;
+    background-color: #58DDA7;
+    border-radius: .4em .4em .4em .4em;
+    border: 4px #7BFFCC;
+    border-style:inset;
+}
+input[type="reset"]:active { 
+    color: #8FF7D1;
+    border-style:solid;
+}
+input[type="reset"]:hover { 
+    border-style:solid;
+}
+
+button { 
+    width: 8em;
+    padding: .25em;
+    display: block;
+    height: auto;
+    color: white;
+    margin: .25em 0 .25em 0;
+    font-size: 1.5em;
+    background-color: #FF6464;
+    border-radius: .4em .4em .4em .4em;
+    border: 4px #FC8383;
+    border-style:inset;
+}
+button:active { 
+    color: #F79A9F;
+    border-style:solid;
+}
+button:hover { 
+    border-style:solid;
+}
+
+/* Below custom "box" wrapper with complimetary full label/header/text-banner 
+Best used when Radio/Checkbox form areas placed within
+*/
+.box-wrap {
+    min-height: 7em;
+    width: 16em;
+    margin: 1.25em 0 1.25em 0;
+    border: 2px solid lightgray;
+    padding: 2em 0 2.5em 0;
+    background-color: #F7F7F7;
+}
+
+/* Below use with .box-wrap as a complimentaryfull label/header/text-banner */
+.box-label {
+    font-size: 1em;
+    width: 15.25em;
+    margin-top: -2em;
+    padding: 1.25em 0 1.25em .75em;
+    background-color: lightgray;
+    font-weight: 400;
+}
+
+/* Below can be applied to accompanying Radio/Checkbox text placed within Box-Wrap*/
+.box-text {
+    margin: 0 0 0 6em;
+    font-size: .9em;
+    color: gray;  
+}
+
+
+/* ELEMENT CUSTOM STYLES - BELOW */
+
+/* TABLE CUSTOM STYLES - 
+   Apply to TH/TD elements to change background color and borders
+*/
+.tb-border-lite {
+    border:solid white 1px;
+}
+
+.tb-border-dark {
+    border:solid gray 1px;
+}
+
+.tb-no-border {
+    border: 0px;
+}
+
+/* Highlight any cell in a table */
+.tb-highlight {
+    background-color: #F7FFA6;
+}
+
+/* Mark off/Strikethrough any cell in a table w/lighter font color */
+.tb-strike {
+    text-decoration: line-through;
+    font-weight: 100;
+    color: #C1C1BF;
+}
+
+/* Differentiate areas in a table w/lighter background */
+.tb-striped {
+    background-color: #F4F4F4;
+    color: gray;
+}
+
+/* Custom Button Styles - BELOW */
+
+/* Large Button Size class
+Can be applied to types="Submit/Button/Reset" and <Button> element
+*/
+.lrg-btn { 
+    width: 8em;
+    padding: .2em;
+    font-size: 2em;
+}
+/* Small Button Size class */
+.sml-btn { 
+    width: 6.5em;
+    padding: .2em;
+    font-size: 1.5em;
+    border-radius: .5em .5em .5em .5em;
+}
+/* Extra Small Button Size class */
+.xsml-btn { 
+    width: 9.5em;
+    font-size: .6em;
+    padding: .5em;
+    border-radius: .75em .75em .75em .75em;
+}
+
+/* MISC. CUSTOM STYLES - BELOW */
+
+/* Soft pink outlined rounded text highlight  */
+.mark-pink {
+    padding: 0em .1em 0em .1em;
+    margin: 0 -.04em 0 -.04em;
+    border-radius: 4px 4px 4px 0px;
+    background-color: #F49FC5;
+    border: solid #F286B7 2px;
+}
+/* Soft blue outlined rounded text highlight  */
+.mark-blue {
+    padding: 0em .1em .0em .1em;
+    margin: 0 -.04em 0 -.04em;
+    border-radius: 4px 4px 4px 0px;
+    background-color: #9CDCF9;
+    border: solid #7BD2F0 2px;
+}
+/* Light gray outlined rounded text highlight  */
+.mark-gray {
+    padding: .0em .1em 0em .1em;
+    margin: 0 -.04em 0 -.04em;
+    border-radius: 4px 4px 4px 0px;
+    background-color: #C6C6C6;
+    border: solid #B2B2B2 2px;
+}
+/* Styling for Alert/Confirm/Prompt Box closing containers */   
+.alert {
+    padding: 1em 1.5em 1em 1em;
+    width: 55%;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    margin: 1em 1em; 
+    border-radius: .25em .25em;
+    border-left: 1.5em solid darkgray;
+    z-index: 1;
+    background-color: #f44336;
+}
+.prompt {
+    padding: 1em 1.5em 1em 1em;
+    width: 55%;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    margin: 1em 1em; 
+    border-radius: .25em .25em;
+    border-left: 1.5em solid darkgray;
+    z-index: 1;
+    background-color: #3bbfed; 
+}
+.confirm {
+    padding: 1em 1.5em 1em 1em;
+    width: 55%;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    margin: 1em 1em; 
+    border-radius: .25em .25em;
+    border-left: 1.5em solid darkgray;
+    z-index: 1;
+    background-color: #39c988;
+}
+/* Styling for Alert/Confirm/Prompt Box closing "x"/"ok" button text */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    background-color: darkgray;
+    padding: .25em .35em;
+    border-radius: .2em;
+    font-weight: bold;
+    float: right;
+    cursor: alias;
+    font-size: 1.5em;
+}
+.closebtn:hover {
+    color: gray;
+    background-color: lightgray;
+    transition: 500ms;
+    
+}
+.popupHeader {
+    margin-left: 0;
+    margin-top: -.25em;
+}
+.popupInput {
+    margin-top: 1em;
+    margin-left: 0;
+    max-width: 96%;
+    
+}
+
+/* MEDIA QUERIES - min width: 480px/768px/960px/1200px */
+
+@media only screen and (min-width: 480px)  {
+/* Content Containers */
+
+header {
+    min-width: 100%;
+    min-height: 5.5em;
+}
+
+footer {
+    min-height: 5.5em;
+}
+
+/* FORM DEFAULTS */
+form {
+    min-width: 480px;
+}
+
+fieldset {
+    max-width: 420px;
+    padding: .5em 0 0 2em;
+}
+
+label {
+    margin: .5em 0 0 0;
+}
+
+textarea {
+    width: 22.6em;
+}
+    
+/* Select Form Dropdown*/
+select {
+    min-width: 24.25em;
+    margin: .4em 0 .5em 0;
+    background-position: 345px 5px;    
+}
+    
+input {
+    margin: .45em 0 0 0;
+    width: 22.9em;
+}
+/* Input clicked */
+input[type="password"] { 
+    width: 23.3em;
+}
+input[type="number"] { 
+    width: 23.3em;
+}
+
+/* Input "button-like elements*/
+input[type="submit"] { 
+    width: 8em;
+    padding: .25em;
+    height: auto;
+    color: white;
+    margin: .5em 0 .5em 0;
+    font-size: 1.5em;
+    background-color: gray;
+    border-radius: .4em .4em .4em .4em;
+    border: 3px #C6C6C6;
+    border-style:inset;
+}
+
+input[type="button"] { 
+    width: 8em;
+    padding: .25em;
+    height: auto;
+    color: white;
+    margin: .5em 0 .5em 0;
+    font-size: 1.5em;
+    background-color: #307FF2;
+    border-radius: .4em .4em .4em .4em;
+    border: 3px #61BEF7;
+    border-style:inset;
+}
+
+input[type="reset"] { 
+    width: 8em;
+    padding: .25em;
+    height: auto;
+    color: white;
+    margin: .5em 0 .5em 0;
+    font-size: 1.5em;
+    background-color: #58DDA7;
+    border-radius: .4em .4em .4em .4em;
+    border: 3px #7BFFCC;
+    border-style:inset;
+}
+
+button { 
+    width: 8em;
+    padding: .25em;
+    display: block;
+    height: auto;
+    color: white;
+    margin: .25em 0 .25em 0;
+    font-size: 1.5em;
+    background-color: #FF6464;
+    border-radius: .4em .4em .4em .4em;
+    border: 3px #FC8383;
+    border-style:inset;
+}
+
+/* Below custom "box" wrapper with complimetary full label/header/text-banner 
+Best used when Radio/Checkbox form areas placed within
+*/
+.box-wrap {
+    width: 24em;
+}
+
+/* Below use with .box-wrap as a complimentaryfull label/header/text-banner */
+.box-label {
+    font-size: 1.05em;
+    width: 22.25em;
+}
+
+/* ELEMENT CUSTOM STYLES - BELOW */
+
+
+/* Small Button Size class */
+.sml-btn { 
+    width: 6em;
+}
+/* Extra Small Button Size class */
+.xsml-btn { 
+    width: 9.5em;
+    font-size: .6em;
+    padding: .5em;
+    border-radius: .75em .75em .75em .75em;
+}
+}
+
+@media only screen and (min-width: 768px)  {
+/* Content Containers */
+header {
+    max-width: 768px;
+    min-height: 8.5em;
+}
+
+footer {
+    min-height: 8.5em;
+}
+
+/* Typographical Elements */
+    
+h3 {
+    padding: .18em 0 .03em .05em;   
+}
+
+/* FORM DEFAULTS */
+form {
+    max-width: 768px;
+    margin: 1.5em 0 1em 0;
+}
+
+fieldset {
+    min-width: 625px;
+}
+
+label {
+    padding: .75em 1em;
+}
+
+textarea {
+    margin: .6em 0 0 0;
+    width: 35.5em;
+}
+    
+/* Select Form Dropdown*/
+select {
+    width: 37.25em;
+    background-position: 553px 5px;   
+}
+
+input {
+    margin: .64em 0 .5em 0;
+    width: 35.75em;
+}
+/* Input clicked */
+input[type="password"] { 
+    margin: .6em 0 1.25em 0;
+    width: 36.25em;
+}
+input[type="number"] { 
+    width: 36.25em;
+    margin: .6em 0 1.25em 0;
+}
+
+/* Below custom "box" wrapper with complimetary full label/header/text-banner 
+Best used when Radio/Checkbox form areas placed within
+*/
+.box-wrap {
+    width: 36.75em;
+    margin: 1.25em 0 1.75em 0;
+}
+
+/* Below use with .box-wrap as a complimentaryfull label/header/text-banner */
+.box-label {
+    font-size: 1.1em;
+    width: 32.65em;
+    margin-top: -1.85em;
+}
+}
+
+@media only screen and (min-width: 960px)  {
+/* Content Containers */
+html {
+    /*margin: 0 auto 0 auto;*/
+    font-size: 1.1em;
+}
+
+header {
+    max-width: 960px;
+    min-height: 9.5em;
+}
+
+footer {
+    min-height: 9.5em;
+}
+
+
+/* FORM DEFAULTS */
+form {
+    max-width: 960px;
+    margin: 1.5em auto 1em auto;
+}
+
+fieldset {
+    min-width: 685px;
+    border: 2px solid gray;
+    padding: 1em 1em 1em 2em;
+}
+
+label {
+    margin: .5em 0 0 0;
+    padding: .75em 1em;
+}
+
+textarea {
+    margin: .65em 0 .5em 0;
+    width: 35.25em;
+}
+
+/* Select Form Dropdown*/
+select {
+    width: 37.25em;
+    margin: .65em 0 .5em 0;
+    background-size: 41px 41px;
+    background-position: 608px 5px;    
+}
+
+input {
+    margin: .65em 0 .5em 0;
+    width: 35.6em;
+}
+
+input[type="password"] { 
+    width: 36em;
+}
+input[type="number"] { 
+    width: 36em;
+}
+
+/* Input "button-like elements*/
+input[type="submit"] { 
+    width: 8em;
+    padding: .25em;
+    height: auto;
+    color: white;
+    margin: .5em 0 .5em 0;
+    font-size: 1.5em;
+    background-color: gray;
+    border-radius: .4em .4em .4em .4em;
+    border: 3px #C6C6C6;
+    border-style:inset;
+}
+
+input[type="button"] { 
+    width: 8em;
+    padding: .25em;
+    height: auto;
+    color: white;
+    margin: .5em 0 .5em 0;
+    font-size: 1.5em;
+    background-color: #307FF2;
+    border-radius: .4em .4em .4em .4em;
+    border: 3px #61BEF7;
+    border-style:inset;
+}
+
+input[type="reset"] { 
+    width: 8em;
+    padding: .25em;
+    height: auto;
+    color: white;
+    margin: .5em 0 .5em 0;
+    font-size: 1.5em;
+    background-color: #58DDA7;
+    border-radius: .4em .4em .4em .4em;
+    border: 3px #7BFFCC;
+    border-style:inset;
+}
+
+button { 
+    width: 8em;
+    padding: .25em;
+    display: block;
+    height: auto;
+    color: white;
+    margin: .25em 0 .25em 0;
+    font-size: 1.5em;
+    background-color: #FF6464;
+    border-radius: .4em .4em .4em .4em;
+    border: 3px #FC8383;
+    border-style:inset;
+}
+
+/* Below custom "box" wrapper with complimetary full label/header/text-banner 
+Best used when Radio/Checkbox form areas placed within
+*/
+.box-wrap {
+    width: 36.75em;
+    margin: 1.25em 0 1.75em 0;
+}
+
+/* Below use with .box-wrap as a complimentaryfull label/header/text-banner */
+.box-label {
+    font-size: 1.1em;
+    width: 32.65em;
+    margin-top: -1.85em;
+}
+
+/* ELEMENT CUSTOM STYLES - BELOW */
+/* Custom Button Styles - BELOW */
+/* Small Button Size class */
+.sml-btn { 
+    width: 6em;
+}
+}  /* end of 960 media query */
+
+@media only screen and (min-width: 1200px)  {
+/* Content Containers */
+html {
+    font-size: 1.15em;
+}
+
+article,
+aside,
+section {
+    margin: 1.5em;
+}
+
+header {
+    max-width: 1200px;
+}
+
+footer {
+    min-height: 7.5em;
+}
+
+/* Tables: Rows/Headers/Data - 
+   Th/Td Elements include right side white border
+ */
+table {
+    width: 80%;  
+}
+
+/* FORM DEFAULTS */
+form {
+    max-width: 1200px;
+}
+
+fieldset {
+    min-width: 715px;
+}
+
+/* Select Form Dropdown*/
+select {
+    width: 37em;
+    background-size: 42px 42px;
+    background-position: 631px 5px;    
+}
+
+input[type="password"] { 
+    margin: .6em 0 1.25em 0;
+}
+input[type="number"] { 
+    margin: .6em 0 1.25em 0;
+}
+
+/* Input "button-like elements*/
+input[type="submit"] { 
+    font-size: 1.25em;
+}
+
+input[type="button"] { 
+    font-size: 1.25em;
+}
+
+input[type="reset"] { 
+    font-size: 1.25em;
+}
+
+button { 
+    font-size: 1.25em;
+}
+
+/* Below custom "box" wrapper with complimetary full label/header/text-banner 
+Best used when Radio/Checkbox form areas placed within
+*/
+.box-wrap {
+    min-height: 7em;
+    width: 36.75em;
+    margin: 1.25em 0 1.75em 0;
+    border: 2px solid lightgray;
+    padding: 2em 0 2.5em 0;
+    background-color: #F7F7F7;
+}

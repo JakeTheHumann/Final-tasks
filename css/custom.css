@@ -38,9 +38,9 @@
   text-transform: uppercase;
   height: auto;
   line-height: 30px;
-  margin-bottom: .75rem;
+  margin-bottom: .2rem;
   font-weight: 600;
-  letter-spacing: .1rem; }
+  letter-spacing: .05rem;}
 .docs-example .row,
 .docs-example.row,
 .docs-example form {
@@ -103,7 +103,7 @@
     margin-bottom: 1rem; }
   .example-grid .column,
   .example-grid .columns {
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1rem; }
   .docs-section {
     padding: 6rem 0; }
   .example-send-yourself-copy {

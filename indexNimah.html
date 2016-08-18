@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nimah's CSS Applied</title>
+    <link rel="stylesheet" type="text/css" href="css/dapper.css"/>
+    <style type="text/css" >
+        body{
+            padding: 10px;
+        }
+        .floatLeftExample, .floatRightExample{
+            max-width: 700px;
+            border: solid 1px #030303;
+        }
+        .floatLeftExample p, .floatRightExample p{
+            max-width: 32%;
+            background-color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+  <h1>This is an H1 tag.</h1>
+  <h2>The body has a padding of 10px via embedded styles. Please notice other embedded styles.</h2>
+   <a href="#">This is a link.</a> <br><br>
+   <abbr>I.M.A.A.</abbr>
+   <p>The line above is an abbreviation. This is a plain paragraph tag.</p>
+   <p class="capitalize">This is a paragraph tag using the class .capitalize.</p>
+   <p class="capitalize">COPY ONE OF THIS SENTENCE HAS NO STYLING/CSS.<span class="lowercase"> COPY TWO OF THIS SENCTENCE USES THE CLASS .LOWERCASE</span></p>
+    <p><span class="uppercase">This is a paragraph tag using the class .uppercase.</span>This sentence is not using the class .uppercase.</p>
+    
+    <blockquote class="blockquote">This is a 'blockquote' tag. Notice that after this one, all others will only have an individual large quote. <br><br>Quis consequatur quisquam quaerat provident recusandae odit expedita esse numquam temporibus ducimus cum molestiae molestias eveniet nisi totam rerum veritatis, laborum laudantium corporis architecto. Accusamus quisquam voluptate odit magni dolorem quibusdam, ullam veniam cumque officiis ea totam voluptas quas, alias eos. </blockquote> 
+   <aside>
+       <address>
+           Nimah Dastmalchi<br>
+           12345 Alphabet Lane <br>      
+           City, State
+       </address>
+       
+       <p>The address tag is inside of an aside tag with a slight background at #f9f9f9.</p>
+       <code>This is a code tag.<br>
+       I suppose the font look like code.
+       </code>
+
+    </aside>
+       <div class="floatLeftExample">
+           <p class="floatL">
+           <span class="dropCap">F</span>loat left pargraph. orem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quisquam beatae, doloribus asperiores similique soluta dicta maxime tenetur harum pariatur, iusto optio mollitia, commodi nostrum, voluptatibus facilis corporis vero fugit nemo est corrupti fuga. Possimus exercitationem eligendi nisi unde perspiciatis commodi minus aliquam dolores magnam mollitia officiis et corporis ratione nam est, distinctio cupiditate! 
+           </p>
+           <p class="floatL">Float left paragraph. Deleniti impedit sint, nobis dicta reiciendis laudantium doloribus eius, esse minima dolorum ratione eaque? Voluptatibus et similique, ratione labore, reiciendis perferendis beatae ullam doloribus optio vel quibusdam officiis doloremque laudantium? Quis consequatur quisquam quaerat provident recusandae odit expedita esse numquam temporibus ducimus cum molestiae molestias eveniet nisi totam rerum veritatis, laborum laudantium corporis architecto. Accusamus quisquam voluptate odit magni dolorem quibusdam, ullam veniam cumque officiis ea totam voluptas quas, alias eos.
+           </p> 
+           <p class="floatL">Float left paragraph.Deleniti impedit sint, nobis dicta reiciendis laudantium doloribus eius, esse minima dolorum ratione eaque? Voluptatibus et similique, ratione labore, reiciendis perferendis beatae ullam doloribus optio vel quibusdam officiis doloremque laudantium? Quis consequatur quisquam quaerat provident recusandae odit expedita esse numquam temporibus ducimus cum molestiae molestias eveniet nisi totam rerum veritatis, laborum laudantium corporis architecto. Accusamus quisquam voluptate odit magni dolorem quibusdam, ullam veniam cumque officiis ea totam voluptas quas, alias eos.
+           </p> 
+           </div>
+           <div class="clearIt"></div>
+           <div class="floatRightExample">
+           <p class="floatR">
+           <b>NOTE: the floats are not actually styled with a light blue background. Just used to emphasis the position of the text/objects.</b>Float right paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quisquam beatae, doloribus asperiores similique soluta dicta maxime tenetur harum pariatur, iusto optio mollitia, commodi nostrum, voluptatibus facilis corporis vero fugit nemo est corrupti fuga. Possimus exercitationem eligendi nisi unde perspiciatis commodi minus aliquam dolores magnam mollitia officiis et corporis ratione nam est, distinctio cupiditate! 
+           </p>
+           <p class="floatR">Float right paragraph. Deleniti impedit sint, nobis dicta reiciendis laudantium doloribus eius, esse minima dolorum ratione eaque? Voluptatibus et similique, ratione labore, reiciendis perferendis beatae ullam doloribus optio vel quibusdam officiis doloremque laudantium? Quis consequatur quisquam quaerat provident recusandae odit expedita esse numquam temporibus ducimus cum molestiae molestias eveniet nisi totam rerum veritatis, laborum laudantium corporis architecto. Accusamus quisquam voluptate odit magni dolorem quibusdam, ullam veniam cumque officiis ea totam voluptas quas, alias eos.
+           </p> 
+           <p class="floatR">Float right paragraph. Deleniti impedit sint, nobis dicta reiciendis laudantium doloribus eius, esse minima dolorum ratione eaque? Voluptatibus et similique, ratione labore, reiciendis perferendis beatae ullam doloribus optio vel quibusdam officiis doloremque laudantium? Quis consequatur quisquam quaerat provident recusandae odit expedita esse numquam temporibus ducimus cum molestiae molestias eveniet nisi totam rerum veritatis, laborum laudantium corporis architecto. Accusamus quisquam voluptate odit magni dolorem quibusdam, ullam veniam cumque officiis ea totam voluptas quas, alias eos.
+           </p> 
+           </div>
+           <div class="clearIt"></div>
+    <blockquote class="blockquote"> <img src="images/StopBeingAWussTimeToWomanUp.jpg" class="responsiveImg floatR cornerBorderBL"/> <p>The picture to the right has a class of '.floatR', a class of '.responsiveImg' and a class of '.cornerBorderBL'-- an incredibly simple css trick.<b>This is a 'b' tag.</b><u> This is a 'u' tag.</u> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque saepe quasi animi, natus itaque quia veniam doloribus libero omnis facilis, nihil.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit vero a ea doloribus porro, soluta animi? Illum ipsa doloremque quas perferendis quia maiores architecto obcaecati, omnis facere. Sunt quisquam beatae, doloribus asperiores similique soluta dicta maxime tenetur harum pariatur, iusto optio mollitia, commodi nostrum, voluptatibus facilis corporis vero fugit nemo est corrupti fuga. </p>
+    <p>Possimus exercitationem eligendi nisi unde perspiciatis commodi minus aliquam dolores magnam mollitia officiis et corporis ratione nam est, distinctio cupiditate! Deleniti impedit sint, nobis dicta reiciendis laudantium doloribus eius, esse minima dolorum ratione eaque? Voluptatibus et similique, ratione labore, reiciendis perferendis beatae ullam doloribus optio vel quibusdam officiis doloremque laudantium? Quis consequatur quisquam quaerat provident recusandae odit expedita esse numquam temporibus ducimus cum molestiae molestias eveniet nisi totam rerum veritatis, laborum laudantium corporis architecto. Accusamus quisquam voluptate odit magni dolorem quibusdam, ullam veniam cumque officiis ea totam voluptas quas, alias eos.  Sequi hic fugit soluta, voluptates est maxime ex impedit fuga illo veniam molestiae laudantium animi dicta reiciendis iusto cumque provident quo. <cite> By Yo Mama Cheeks</cite>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+
+    <blockquote class="clearIt"> 
+    <img src="images/StopBeingAWussTimeToWomanUp.jpg" class="responsiveImg floatL "/>Suscipit vero a ea doloribus porro, soluta animi? Illum ipsa doloremque quas perferendis quia maiores architecto obcaecati, omnis facere. Sunt quisquam beatae, doloribus asperiores similique soluta dicta maxime tenetur harum pariatur, iusto optio mollitia, commodi nostrum, voluptatibus facilis corporis vero fugit nemo est corrupti fuga. Possimus exercitationem eligendi nisi unde perspiciatis commodi minus aliquam dolores magnam mollitia officiis et corporis ratione nam est, distinctio cupiditate! Deleniti impedit sint, nobis dicta reiciendis laudantium doloribus eius, esse minima dolorum ratione eaque? Voluptatibus et similique, ratione labore, reiciendis perferendis beatae ullam doloribus optio vel quibusdam officiis doloremque laudantium? <blockquote>This is a double-nested 'blockquote' tag. Quis consequatur quisquam quaerat provident recusandae odit expedita esse numquam temporibus ducimus cum molestiae molestias eveniet nisi totam rerum veritatis, laborum laudantium corporis architecto. Accusamus quisquam voluptate odit magni dolorem quibusdam, ullam veniam cumque officiis ea totam voluptas quas, alias eos. </blockquote>Amet quam iste veniam a cumque exercitationem enim praesentium rem aliquam assumenda natus voluptates ducimus temporibus, consequatur quisquam sequi. <cite>By Yo Mama Cheeks</cite> Amet quam iste veniam a cumque exercitationem enim praesentium rem aliquam assumenda natus voluptates ducimus temporibus, consequatur quisquam sequi. Inventore commodi ducimus, ipsa expedita numquam atque maxime sint magnam obcaecati repudiandae quam non quasi deserunt doloremque aliquid amet fugit ipsam aliquam hic, odio blanditiis alias assumenda officiis. <cite>By Yo Mama Cheeks</cite>
+    </blockquote>
+       <cite class="clearIt">By Yo Mama Cheeks</cite>
+       <p>Magnam possimus repellat, commodi, aspernatur optio consequuntur iusto atque delectus voluptatibus mollitia quo natus harum, eos cupiditate nostrum sapiente tempore provident iste nulla odit animi facere dolor! Tenetur deserunt commodi perspiciatis, doloribus ad nam a porro error dolores quidem eligendi autem rem illum quas nobis, eum doloremque.
+       </p>
+       
+    
+       <p title="noDropCap">Magnam possimus repellat, commodi, aspernatur optio consequuntur iusto atque delectus voluptatibus mollitia quo natus harum, eos cupiditate nostrum sapiente tempore provident iste nulla odit animi facere dolor! Tenetur deserunt commodi perspiciatis, doloribus ad nam a porro error dolores quidem eligendi autem rem illum quas nobis, eum doloremque.
+       </p>
+    </blockquote>
+    
+    
+    
+<h3>Below are nested ordered and unordered list.</h3>
+    <ol>
+        <li>Below is a list of variables
+            <ul>
+                <li><var>x</var></li>
+                <li><var>y</var></li>
+                <li><var>z</var>
+                    <ol>
+                        <li><var>z.1</var></li>
+                        <li><var>z.2</var></li>
+                        <li><var>z.3</var></li>
+                        <li><var>z.4</var>
+                            <ol>
+                                <li>four</li>
+                                <li>four</li>
+                                <li>four</li>
+                                <li>four
+                                    <ol>
+                                        <li>five</li>
+                                        <li>five</li>
+                                        <li>five</li>
+                                        <li>five</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>two</li>
+            </ul>
+        </li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+    </ol>
+    
+</body>
+</html>
